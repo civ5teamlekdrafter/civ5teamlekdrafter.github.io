@@ -1,0 +1,197 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Hellblazer's Civilization 5 Drafter</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="drafter.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<p class="headline">Hellblazer's Civilization 5 Drafter</p>
+		</div>
+		
+		<form method="post">
+			<div id="playerdetails">
+			    <ul>
+			        <li>
+			            <label>Number of Players in Game</label>
+			            <select class="drafterdropbox" id="gameplayers">
+			                <option>1 Player</option>
+			                <option selected="selected">2 Players</option>
+			                <option>3 Players</option>
+			                <option>4 Players</option>
+			                <option>5 Players</option>
+			                <option>6 Players</option>
+			                <option>7 Players</option>
+			                <option>8 Players</option>
+			                <option>9 Players</option>
+			                <option>10 Players</option>
+			                <option>11 Players</option>
+			                <option>12 Players</option>
+			            </select>
+			        </li>
+			        <li>
+			            <label>Number of Random Picks</label>
+			            <select class="drafterdropbox" id="picks">
+			                <option>1 Pick</option>
+			                <option>2 Picks</option>
+			                <option>3 Picks</option>
+			                <option>4 Picks</option>
+			                <option selected="selected">5 Picks</option>
+			                <option>6 Picks</option>
+			                <option>7 Picks</option>
+			                <option>8 Picks</option>
+			                <option>9 Picks</option>
+			                <option>10 Picks</option>
+			            </select>
+			        </li>
+			    </ul>
+			</div>
+			
+			<div id="civselections">
+				<p class="selectorheadline">65 Allowed - 0 Banned</p>
+				<table id="civilizations">
+					<tr>
+						<td class="Akkad">Akkad</td>
+						<td class="America">America</td>
+						
+						<td class="Argentina">Argentina</td>						
+						<td class="Armenia">Armenia</td>
+						<td class="Assyria">Assyria</td>			
+					</tr>
+					<tr>
+
+						<td class="Austria">Austria</td>
+						<td class="Ayyubids">Ayyubids</td>
+						<td class="Aztec">Aztec</td>
+						<td class="Babylon">Babylon</td>
+						<td class="Belgium">Belgium</td>
+						<td class="Boers">Boers</td>
+						<td class="Brazil">Brazil</td>
+						
+					</tr>
+					<tr>
+						
+						<td class="Bulgaria">Bulgaria</td>
+						<td class="Burma">Burma</td>
+						<td class="Byzantium">Byzantium</td>
+						<td class="Canada">Canada</td>
+						<td class="Carthage">Carthage</td>
+						<td class="Celts">Celts</td>
+					</tr>
+					<tr>
+						
+					</tr>
+					<tr>
+						<td class="China">China</td>
+						
+						<td class="Egypt">Egypt</td>
+						
+						<td class="Ethiopia">Ethiopia</td>
+						<td class="Finland">Finland</td>
+						<td class="France">France</td>
+					</tr>
+					<tr>
+						<td class="Franks">Franks</td>
+						<td class="Germany">Germany</td>
+						<td class="Golden">Golden Horde</td>
+						<td class="Goths">Goths</td>
+						<td class="Greece">Greece</td>
+						<td class="Hittites">Hittites</td>
+						<td class="Hungary">Hungary</td>
+					</tr>
+					<tr>
+						<td class="Huns">Huns</td>
+						<td class="Inca">Inca</td>
+						<td class="India">India</td>
+						
+						<td class="Iroquois">Iroquois</td>
+						<td class="Israel">Israel</td>
+						<td class="Italy">Italy</td>
+					</tr>
+					<tr>
+						
+						<td class="Jerusalem">Jerusalem</td>
+						<td class="Khmer">Khmer</td>
+						
+						
+						<td class="Lithuania">Lithuania</td>
+						<td class="Macedonian">Macedonia</td>
+					</tr>
+					<tr>
+						
+						<td class="Manchuria">Manchuria</td>
+						<td class="Maya">Maya</td>
+						<td class="Mexican">Mexico</td>
+						<td class="Mongolia">Mongolia</td>
+						<td class="Morocco">Morocco</td>
+						<td class="Netherlands">Netherlands</td>
+					</tr>
+					<tr>
+						<td class="Normandy">Normandy</td>
+						
+						<td class="Nubia">Nubia</td>
+						<td class="Ottomans">Ottomans</td>
+						<td class="Persia">Persia</td>
+						<td class="Poland">Poland</td>
+						
+					</tr>
+					<tr>
+						
+						<td class="Prussian">Prussia</td>
+						<td class="Romania">Romania</td>
+						<td class="Rome">Rome</td>
+						<td class="Russia">Russia</td>
+					
+						<td class="Shoshone">Shoshone</td>
+					</tr>
+					<tr>
+						<td class="Siam">Siam</td>
+						<td class="Sioux">Sioux</td>
+						<td class="Songhai">Songhai</td>
+						
+						<td class="Sumeria">Sumeria</td>
+						<td class="Sweden">Sweden</td>
+						
+					<tr>
+						
+						<td class="Ukraine">Ukraine</td>
+						
+						
+						<td class="Vietnam">Vietnam</td>
+						<td class="Zulu">Zulu</td>
+					</tr>
+
+				</table>
+			</div>
+			<!--<div id="nqonly">
+				<label>NQ Mod Civs Only</label>
+				<div class="slideThree">  
+			      <input type="checkbox" value="None" id="slideThree" name="check" unchecked />
+			      <label for="slideThree"></label>
+			    </div>
+
+			</div>-->
+			<div id="buttons">
+				<input class="submitbutton" name="create" id="create" type="button" value="Create Draft" />
+				<input class="submitbutton" name="reset" id="reset" type="button" value="Reset" />
+				<input class="submitbutton" name="all" id="all" type="button" value="All" />
+			</div>
+		</form>
+		
+		<div id="results">
+		</div>
+	</div>
+	
+	<div id="copyresultstext">
+		<textarea rows="4" cols="50" id="copyTarget">
+			Text to Copy
+		</textarea>
+	</div>
+</body>
+</html>
