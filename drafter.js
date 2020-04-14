@@ -63,7 +63,7 @@ $(document).ready(function() {
 	allCivs["Nubia"] = true;
 	allCivs["Ottomans"] = true;
 	allCivs["Persia"] = true;
-	allCivs["Poland"] = true;
+	allCivs["Poland"] = false;
 	allCivs["Polynesia"] = false;
 	allCivs["Portugal"] = false;
 	allCivs["Prussian"] = true;
