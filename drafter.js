@@ -50,7 +50,7 @@ $(document).ready(function() {
 	allCivs["Kongo"] = false;
 	allCivs["Korea"] = false;
 	allCivs["Lithuania"] = true;
-	allCivs["Macedonian"] = true;
+	allCivs["Macedonian"] = false;
 	allCivs["Malagasy"] = false;
 	allCivs["Manchuria"] = true;
 	allCivs["Maya"] = true;
